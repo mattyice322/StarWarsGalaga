@@ -10,6 +10,18 @@ var dropColor = [];
 
 draw = function() {
     background(0, 0, 0);
+    textSize(15);
+    fill(255, 0, 0);
+    textFont(createFont(" Bold "));
+    text("1UP",39,19);
+    text("HIGH SCORE",160,19);
+    fill(255, 255, 255);
+    textSize(18);
+    text("2",177,37);
+    text("0",189,37);
+    text("0",202,37);
+    text("0",215,37);
+    text("0",228,37);
     fill(128, 128, 128);
     noStroke();
 strokeWeight(5);
@@ -23,3 +35,4 @@ strokeWeight(5);
 
 }
 };
+
