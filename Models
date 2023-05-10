@@ -1,0 +1,136 @@
+var drawMiddleAlien = function(tieX, tieY, tieZ) {
+  var wingsMiddle = function() {
+    noStroke();
+fill(110, 110, 110);
+rect(tieX+(tieZ/100*116),tieY+(tieZ/100*183),(tieZ/100*50),(tieZ/100*50));//left wing attachment
+rect(tieX+(tieZ/100*330),tieY+(tieZ/100*183),(tieZ/100*50),(tieZ/100*50));//right wing attachment
+
+fill(130, 130, 130);
+rect(tieX+(tieZ/100*96),tieY+(tieZ/100*111),(tieZ/100*21),(tieZ/100*180));//left wing
+rect(tieX+(tieZ/100*85),tieY+(tieZ/100*121),(tieZ/100*13),(tieZ/100*160));//left wing pixel
+rect(tieX+(tieZ/100*379),tieY+(tieZ/100*111),(tieZ/100*21),(tieZ/100*180)); //right wing
+rect(tieX+(tieZ/100*397),tieY+(tieZ/100*121),(tieZ/100*13),(tieZ/100*160));//right wing pixel
+  };
+  
+  var body1 = function() {
+    noStroke();
+fill(105, 101, 105);
+rect(tieX+(tieZ/100*147),tieY+(tieZ/100*154),(tieZ/100*101),(tieZ/100*100)); //big grey square body
+
+fill(0, 0, 0);
+rect(tieX+(tieZ/100*172),tieY+(tieZ/100*179),(tieZ/100*50),(tieZ/100*50));//small black square in the middle
+
+fill(105, 101, 105);
+rect(tieX+(tieZ/100*175),tieY+(tieZ/100*182),(tieZ/100*44),(tieZ/100*44));//small grey square in the middle
+
+fill(0, 0, 0);
+rect(tieX+(tieZ/100*180),tieY+(tieZ/100*189),(tieZ/100*10),(tieZ/100*30));//small left black rectangle in the middle
+rect(tieX+(tieZ/100*203),tieY+(tieZ/100*189),(tieZ/100*10),(tieZ/100*30));//small right black rectangle in the middle
+
+
+fill(105, 101, 105);
+rect(tieX+(tieZ/100*157),tieY+(tieZ/100*141),(tieZ/100*80),(tieZ/100*20));//pixel line top of the ship
+fill(107, 95, 107);
+quad(tieX+(tieZ/100*178), tieY+(tieZ/100*109), tieX+(tieZ/100*212), tieY+(tieZ/100*109), tieX+(tieZ/100*230), tieY+(tieZ/100*143), tieX+(tieZ/100*162), tieY+(tieZ/100*143));//exhaust at top of the ship
+fill(0, 0, 0);
+rect(tieX+(tieZ/100*170),tieY+(tieZ/100*125),(tieZ/100*2),(tieZ/100*18));//leftmost line
+rect(tieX+(tieZ/100*178),tieY+(tieZ/100*110),(tieZ/100*2),(tieZ/100*33));//second leftmost line
+rect(tieX+(tieZ/100*194),tieY+(tieZ/100*110),(tieZ/100*2),(tieZ/100*33)); //middle line
+rect(tieX+(tieZ/100*210),tieY+(tieZ/100*110),(tieZ/100*2),(tieZ/100*33));//second rightmost line
+rect(tieX+(tieZ/100*218),tieY+(tieZ/100*125),(tieZ/100*2),(tieZ/100*18));//rightmost line
+
+fill(69, 59, 69);
+quad(tieX+(tieZ/100*146), tieY+(tieZ/100*254), tieX+(tieZ/100*248), tieY+(tieZ/100*254), tieX+(tieZ/100*230), tieY+(tieZ/100*268), tieX+(tieZ/100*162), tieY+(tieZ/100*268));//window at bottom of the ship
+  };
+  
+  var body2 = function() {
+    noStroke();
+fill(105, 101, 105);
+rect(tieX+(tieZ/100*247),tieY+(tieZ/100*154),(tieZ/100*101),(tieZ/100*100)); //big grey square body
+
+fill(0, 0, 0);
+rect(tieX+(tieZ/100*272),tieY+(tieZ/100*179),(tieZ/100*50),(tieZ/100*50));//small black square in the middle
+
+fill(105, 101, 105);
+rect(tieX+(tieZ/100*275),tieY+(tieZ/100*182),(tieZ/100*44),(tieZ/100*44));//small grey square in the middle
+
+fill(0, 0, 0);
+rect(tieX+(tieZ/100*280),tieY+(tieZ/100*189),(tieZ/100*10),(tieZ/100*30));//small left black rectangle in the middle
+rect(tieX+(tieZ/100*303),tieY+(tieZ/100*189),(tieZ/100*10),(tieZ/100*30));//small right black rectangle in the middle
+
+
+fill(105, 101, 105);
+rect(tieX+(tieZ/100*257),tieY+(tieZ/100*141),(tieZ/100*80),(tieZ/100*20));//pixel line top of the ship
+fill(107, 95, 107);
+quad(tieX+(tieZ/100*278), tieY+(tieZ/100*109), tieX+(tieZ/100*312), tieY+(tieZ/100*109), tieX+(tieZ/100*330), tieY+(tieZ/100*143), tieX+(tieZ/100*262), tieY+(tieZ/100*143));//exhaust at top of the ship
+fill(0, 0, 0);
+rect(tieX+(tieZ/100*270),tieY+(tieZ/100*125),(tieZ/100*2),(tieZ/100*18));//leftmost line
+rect(tieX+(tieZ/100*278),tieY+(tieZ/100*110),(tieZ/100*2),(tieZ/100*33));//second leftmost line
+rect(tieX+(tieZ/100*294),tieY+(tieZ/100*110),(tieZ/100*2),(tieZ/100*33)); //middle line
+rect(tieX+(tieZ/100*310),tieY+(tieZ/100*110),(tieZ/100*2),(tieZ/100*33));//second rightmost line
+rect(tieX+(tieZ/100*318),tieY+(tieZ/100*125),(tieZ/100*2),(tieZ/100*18));//rightmost line
+
+fill(69, 59, 69);
+quad(tieX+(tieZ/100*246), tieY+(tieZ/100*254), tieX+(tieZ/100*348), tieY+(tieZ/100*254), tieX+(tieZ/100*330), tieY+(tieZ/100*268), tieX+(tieZ/100*262), tieY+(tieZ/100*268));//window at bottom of the ship
+  };
+  
+  wingsMiddle();
+  body1();
+  body2();
+};
+
+
+var drawBottomAlien = function(tieX, tieY, tieZ) {
+  var wingsBottom = function() {
+    noStroke();
+fill(110, 110, 110);
+rect(tieX+(tieZ/100*116),tieY+(tieZ/100*183),(tieZ/100*50),(tieZ/100*50));//left wing attachment
+rect(tieX+(tieZ/100*230),tieY+(tieZ/100*183),(tieZ/100*50),(tieZ/100*50));//right wing attachment
+
+fill(130, 130, 130);
+rect(tieX+(tieZ/100*96),tieY+(tieZ/100*111),(tieZ/100*21),(tieZ/100*180));//left wing
+rect(tieX+(tieZ/100*85),tieY+(tieZ/100*121),(tieZ/100*13),(tieZ/100*160));//left wing pixel
+rect(tieX+(tieZ/100*279),tieY+(tieZ/100*111),(tieZ/100*21),(tieZ/100*180)); //right wing
+rect(tieX+(tieZ/100*297),tieY+(tieZ/100*121),(tieZ/100*13),(tieZ/100*160));//left wing pixel
+  };
+  
+  var body = function() {
+   noStroke();
+fill(130, 130, 130);
+rect(tieX+(tieZ/100*147),tieY+(tieZ/100*154),(tieZ/100*101),(tieZ/100*100)); //big grey square body
+
+fill(0, 0, 0);
+rect(tieX+(tieZ/100*172),tieY+(tieZ/100*179),(tieZ/100*50),(tieZ/100*50));//small black square in the middle
+
+fill(130, 130, 130);
+rect(tieX+(tieZ/100*175),tieY+(tieZ/100*182),(tieZ/100*44),(tieZ/100*44));//small grey square in the middle
+
+fill(0, 0, 0);
+rect(tieX+(tieZ/100*180),tieY+(tieZ/100*189),(tieZ/100*10),(tieZ/100*30));//small left black rectangle in the middle
+rect(tieX+(tieZ/100*203),tieY+(tieZ/100*189),(tieZ/100*10),(tieZ/100*30));//small right black rectangle in the middle
+
+
+fill(130, 130, 130);
+rect(tieX+(tieZ/100*157),tieY+(tieZ/100*141),(tieZ/100*80),(tieZ/100*20));//pixel line top of the ship
+fill(107, 95, 107);
+quad(tieX+(tieZ/100*178), tieY+(tieZ/100*109), tieX+(tieZ/100*212), tieY+(tieZ/100*109), tieX+(tieZ/100*230), tieY+(tieZ/100*143), tieX+(tieZ/100*162), tieY+(tieZ/100*143));//exhaust at top of the ship
+fill(0, 0, 0);
+rect(tieX+(tieZ/100*170),tieY+(tieZ/100*125),(tieZ/100*2),(tieZ/100*18));//leftmost line
+rect(tieX+(tieZ/100*178),tieY+(tieZ/100*110),(tieZ/100*2),(tieZ/100*33));//second leftmost line
+rect(tieX+(tieZ/100*194),tieY+(tieZ/100*110),(tieZ/100*2),(tieZ/100*33)); //middle line
+rect(tieX+(tieZ/100*210),tieY+(tieZ/100*110),(tieZ/100*2),(tieZ/100*33));//second rightmost line
+rect(tieX+(tieZ/100*218),tieY+(tieZ/100*125),(tieZ/100*2),(tieZ/100*18));//rightmost line
+
+
+fill(69, 59, 69);
+quad(tieX+(tieZ/100*146), tieY+(tieZ/100*254), tieX+(tieZ/100*248), tieY+(tieZ/100*254), tieX+(tieZ/100*230), tieY+(tieZ/100*268), tieX+(tieZ/100*162), tieY+(tieZ/100*268));//window at bottom of the ship 
+  };
+  
+  
+  
+  wingsBottom();
+  body();
+};
+
+drawMiddleAlien(16, 31, 30);
+drawBottomAlien(163, 31, 30);
